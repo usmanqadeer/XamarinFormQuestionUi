@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFUIDesign.Views.QuestionPage"
+             xmlns:vm="clr-namespace:XFUIDesign.ViewModels"
+             BackgroundColor="White"
+             Visual="Material"
+             Title="Questions">
+    
+    <ContentPage.BindingContext>
+        <vm:QuestionsViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="EditIcon.png"/>
+    </ContentPage.ToolbarItems>
+    <Grid>
+        <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never" Padding="5,10,5,10">
+            <CollectionView ItemsSource="{Binding QuestionsModel}" x:Name="QuestionsCollection">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical"
+                                            HorizontalItemSpacing="2"
+                                            VerticalItemSpacing="2"
+                                            Span="2" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Frame Visual="Material" HasShadow="True" Margin="5" Padding="0"  BackgroundColor="WhiteSmoke">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped"/>
+                                </Frame.GestureRecognizers>
+                                <StackLayout Margin="0" Padding="0">
+                                    <Image Source="{Binding ImageUri}"
+                                           HeightRequest="175" 
+                                           Margin="0" 
+                                           Visual="Material"
+                                           Aspect="AspectFill"/>
+                                    <Image Source="RattingImage.png" 
+                                           HeightRequest="25" 
+                                           WidthRequest="25" 
+                                           Visual="Material"
+                                           HorizontalOptions="End" 
+                                           Margin="0,-40,10,0"
+                                           Aspect="AspectFill"/>
+                                    
+                                   <Label Text="{Binding Question}"
+                                          Margin="5,8,5,5"
+                                          MaxLines="2"
+                                          Visual="Material"
+                                          FontFamily="RegularFont"
+                                          Style="{StaticResource SectionHeader}"
+                                          TextColor="Black"/>
+                                    <StackLayout Orientation="Horizontal" Spacing="0">
+                                        <Image Source="TimeImage.png"
+                                               HeightRequest="20" 
+                                               WidthRequest="20" 
+                                               Opacity="0.5"
+                                               Margin="10,5,0,15"
+                                               HorizontalOptions="StartAndExpand"/>
+                                        <Label Padding="0" Margin="0,0,76,13" HorizontalOptions="Center" VerticalOptions="Center">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding Time}" FontAttributes="Bold" TextColor="Gray"/>
+                                                    <Span Text="  "/>
+                                                    <Span Text="min" FontAttributes="Bold" TextColor="Gray"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+        <Frame BackgroundColor="{StaticResource Background}" VerticalOptions="End" HorizontalOptions="End" HasShadow="False" HeightRequest="18" WidthRequest="18" CornerRadius="30" TranslationY="-30" TranslationX="-30">
+            <ImageButton Source="PlusImage.png" BackgroundColor="Transparent"/>
+        </Frame>
+    </Grid>
+
+</ContentPage>

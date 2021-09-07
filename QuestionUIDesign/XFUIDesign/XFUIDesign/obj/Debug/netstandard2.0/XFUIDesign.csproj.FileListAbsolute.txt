@@ -1,0 +1,16 @@
+F:\XFUI\XFUIDesign\XFUIDesign\bin\Debug\netstandard2.0\XFUIDesign.deps.json
+F:\XFUI\XFUIDesign\XFUIDesign\bin\Debug\netstandard2.0\XFUIDesign.dll
+F:\XFUI\XFUIDesign\XFUIDesign\bin\Debug\netstandard2.0\ref\XFUIDesign.dll
+F:\XFUI\XFUIDesign\XFUIDesign\bin\Debug\netstandard2.0\XFUIDesign.pdb
+F:\XFUI\XFUIDesign\XFUIDesign\obj\Debug\netstandard2.0\App.xaml.g.cs
+F:\XFUI\XFUIDesign\XFUIDesign\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+F:\XFUI\XFUIDesign\XFUIDesign\obj\Debug\netstandard2.0\Views\QuestionsPage.xaml.g.cs
+F:\XFUI\XFUIDesign\XFUIDesign\obj\Debug\netstandard2.0\XFUIDesign.AssemblyInfoInputs.cache
+F:\XFUI\XFUIDesign\XFUIDesign\obj\Debug\netstandard2.0\XFUIDesign.AssemblyInfo.cs
+F:\XFUI\XFUIDesign\XFUIDesign\obj\Debug\netstandard2.0\XFUIDesign.csproj.CoreCompileInputs.cache
+F:\XFUI\XFUIDesign\XFUIDesign\obj\Debug\netstandard2.0\XamlC.stamp
+F:\XFUI\XFUIDesign\XFUIDesign\obj\Debug\netstandard2.0\XFUIDesign.dll
+F:\XFUI\XFUIDesign\XFUIDesign\obj\Debug\netstandard2.0\ref\XFUIDesign.dll
+F:\XFUI\XFUIDesign\XFUIDesign\obj\Debug\netstandard2.0\XFUIDesign.pdb
+F:\XFUI\XFUIDesign\XFUIDesign\obj\Debug\netstandard2.0\XFUIDesign.csprojAssemblyReference.cache
+F:\XFUI\XFUIDesign\XFUIDesign\obj\Debug\netstandard2.0\Views\QuestionDetailPage.xaml.g.cs
